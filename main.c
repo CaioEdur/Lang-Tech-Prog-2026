@@ -1,19 +1,37 @@
 #include <stdio.h>
 #include <stdlib.h>
+#define pi 3.14159
+/* run this program using the console pauser or add your own getch, system("pause") or input loop */
 
+int main(int argc, char *argv[]) {
+	
+// area do circulo
+	float raio, area, raioquadrado;
+	
+	printf("Escreva o Raio: \n");
+	scanf("%f", &raio);
+	
+	raioquadrado = raio * raio;
+	area = pi * raioquadrado;
+	
+	printf("A area do circulo de raio %f = %f \n", raio, area);
 
-int main() {
+// area do trapezio
 	
+	float altura, baseM, basem, A;
 	
-	int a,b,c,d,e;
+	printf("\nEscreva a altura:  \n");
+	scanf("%f", &A);
 	
-	a = 10;
-	b = 20;
-	c = 30;
-	d = (a+b+c)/3;
+	printf("Escreva a base maior: \n");
+	scanf("%f", &baseM);
 	
+	printf("Escreva a base menor: \n");
+	scanf("%f", &basem); 
 	
-	printf("A média de %d, %d e %d = %d", a,b,c,d);
+	A = ((baseM + basem) * A)/2;
 	
-return 0;
+	printf("A area do trapezio é %f", A);
+	
+	return 0;
 }
