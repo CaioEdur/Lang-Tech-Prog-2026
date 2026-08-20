@@ -31,7 +31,7 @@ int main(int argc, char *argv[]) {
 	
 	A = ((baseM + basem) * A)/2;
 	
-	printf("A area do trapezio é %f", A);
+	printf("A area do trapezio Ã© %f", A);
 	
 	return 0;
 }
