@@ -19,7 +19,7 @@ int main(int argc, char *argv[]) {
 	printf("\no horario e de %02d:%02d:%02d", h, m, s);
 	
 	printf("\n============================\n");
-	/*
+	
 	printf("\n=============7==============");
 	
 	float R=780000, p, s, t;
@@ -104,7 +104,7 @@ int main(int argc, char *argv[]) {
 	
 	float r, d, dolar;
 	
-	printf("\nInsira o valor em real para a converçao: ");
+	printf("\nInsira o valor em real para a converÃ§ao: ");
 	scanf("%f", &r);
 	
 	d = 5.19;
@@ -128,7 +128,7 @@ int main(int argc, char *argv[]) {
 	printf("\nO maior numero entre %d %d e %d e o %d ", a, b, c, maior);
 	
 	printf("\n============================\n");
-	*/
+	
 
 	return 0;
 }
