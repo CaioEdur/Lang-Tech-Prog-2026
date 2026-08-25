@@ -145,9 +145,9 @@ int main(int argc, char *argv[]) {
 	printf("\nInforme a sua idade em dias: ");
 	scanf("%d", &idade);
 	
-	anos = idade / 360;
-	meses = (idade % 360) / 12;
-	dias = idade % 30;
+	anos = idade / 365;
+	dias = (idade % 365) % 30;
+	meses = (idade % 365) / 30;		
 	
 	printf("\nVoce tem %d anos, %d meses e %d dias de vida", anos, meses, dias);
 	
