@@ -1,11 +1,13 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <MATH.H>
+
 
 /* run this program using the console pauser or add your own getch, system("pause") or input loop */
 
 int main(int argc, char *argv[]) {
 	
-		int primeiro, segundo, AUX;
+	int primeiro, segundo, AUX;
 	
 	printf("=================EXERCICIO 1=================\n");
 	
@@ -29,7 +31,7 @@ int main(int argc, char *argv[]) {
 	double valor, base;
 	int expoente;
 
-	printf("\nInsira um valor positivo: ");
+	printf("\nInsira um valor positivo com até 6 casas decimais: ");
 	scanf("%lf", &valor);//limitado a 6 casa decimais.
 
 	base = valor;
@@ -60,7 +62,7 @@ int main(int argc, char *argv[]) {
 		expoente++;
 	}
 	
-	printf("\nEm notacao cientifica: %.6f x 10^%d\n", base, expoente);
+	printf("\nEm notacao cientifica: %f x 10^%d\n", base, expoente);
 
 	
 	printf("\n=============================================\n");
@@ -115,27 +117,54 @@ int main(int argc, char *argv[]) {
 	printf("\n=============================================\n");
 	printf("=================EXERCICIO 5=================\n");
 
-	int m, s, p, valor1, valor2, valor3, valor4, in;
+	int m, s, p, valor1, valor2, valor3, valor4, v1, v2, v3, v4, i;
 
 	
-	printf("\nInforme o valor 1: ");
+	printf("\nInforme um valor de 1 ate 6: ");
 	scanf("%d", &valor1);
 
-	printf("\nInforme o valor 2: ");
+	printf("\nInforme outro valor : ");
 	scanf("%d", &valor2);
 
-	printf("\nInforme o valor 3: ");
+	printf("\nInforme outro valor : ");
 	scanf("%d", &valor3);
 
-	printf("\nInforme o valor 4: ");
+	printf("\nInforme outro valor : ");
 	scanf("%d", &valor4);
 
 	s = valor1 + valor2 + valor3 + valor4;
 	m = s / 4;
-
+	
 	printf("\nA soma dos valores é: %d", s);
 	printf("\nA media dos valores é: %d", m);
 	
+	printf("=================EXERCICIO 6=================\n");
+	
+	int idade, anos, meses, dias;
+	
+	printf("\nInforme a sua idade em dias: ");
+	scanf("%d", &idade);
+	
+	anos = idade / 360;
+	meses = (idade % 360) / 12;
+	dias = idade % 30;
+	
+	printf("\nVoce tem %d anos, %d meses e %d dias de vida", anos, meses, dias);
+	
+	printf("\n=============================================\n");	
+	
+	printf("=================EXERCICIO 7=================\n");
+	
+	float r, volume, pi=3.14159;
+	
+	printf("\nInforme o raio para o calculo: ");
+	scanf("%f", &r);
+	
+	volume = (4/3.0) * pi * (r*r*r);
+	
+	printf("\nO volume e de %f", volume);
+	
+	printf("\n=============================================\n");
 	
 	printf("\n=============================================\n");
 	printf("=================EXERCICIO 8=================\n");
