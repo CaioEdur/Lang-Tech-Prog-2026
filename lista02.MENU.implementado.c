@@ -24,7 +24,7 @@ int main(int argc, char *argv[]) {
 	
 	int op;
 	
-	printf("\nEscolha um exercício para visualizar ou realizar: ");
+	printf("\nEscolha um exercÃ­cio para visualizar ou realizar: ");
 	scanf("%d", &op);
 	
 	switch (op) {
@@ -70,7 +70,7 @@ int main(int argc, char *argv[]) {
 				
 			float r, d, dolar;
 				
-			printf("\nInsira o valor em real para a converçao: ");
+			printf("\nInsira o valor em real para a converÃ§ao: ");
 			scanf("%f", &r);
 				
 			d = 5.19;
