@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 void exec2(){
-	//FaÁa um programa que leia um valor em reais e a cotaÁ„o do dÛlar. Em seguida, imprima o valor correspondente em dÛlares.
+	//Fa√ßa um programa que leia um valor em reais e a cota√ß√£o do d√≥lar. Em seguida, imprima o valor correspondente em d√≥lares.
 	float dola, real, cota; 
 	scanf("%f", &real); 
 	scanf("%f", &cota); 
@@ -16,7 +16,7 @@ void exec3(){
 	printf("A temperatura maxima de hoje na tela da globo %f", tempF);
 }
 int exec8(){
-		//(URI 1019) Leia um valor inteiro, que È o tempo de duraÁ„o em segundos de um determinado evento em uma f·brica, e informe-o
+	//(URI 1019) Leia um valor inteiro, que √© o tempo de dura√ß√£o em segundos de um determinado evento em uma f√°brica, e informe-o
 	int segundos, horas, minutos;
 	scanf("%d", &segundos);
 	horas = segundos/3600 ;
