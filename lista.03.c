@@ -24,6 +24,34 @@ void ex5 (){
 }
 void ex6 (){
 	
+	double t = 0.01, g = 9.8, k = 0.5, vx, vy, x = 0, y = 0, rad, v0, graus0, tempo = 0;
+	
+	
+	printf("informe a velocidade inicial: ");
+	scanf("%lf", &v0);
+	
+	printf("informe o angulo(graus): ");
+	scanf("%lf", &graus0);
+	
+	rad = graus0 * (M_PI / 180);
+	
+	vx = v0 * cos(rad);
+	vy = v0 * sin(rad);
+	
+	while (y >= 0) {
+		
+		vx = vx - k * vx * t;
+		vy = vy - g * t - k * vy * t;
+		
+		x = x + vx * t;
+		y = y + vy * t;
+		
+		tempo = tempo + t;
+		
+	}
+	printf("Alcance horizontal: %.2f metros\n", x);
+    printf("Tempo de voo: %.2f segundos\n", tempo);
+	
 }
 int main(int argc, char *argv[]) {
 	
@@ -44,6 +72,9 @@ int main(int argc, char *argv[]) {
 			ex5 ();
 			break;
 		}
-	}
+		case 6:{
+			ex6 ():
+			break;
+		}
 	return 0;
 }
